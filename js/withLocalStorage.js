@@ -51,7 +51,7 @@ addBook.addEventListener("click", evt => {
         // document.body.removeChild(document.body.querySelector(".cards"));
         // console.log(document.body.querySelector(".cards"));
         // document.body.querySelector(".cards").remove();
-        renderBooks();
+        // renderBooks();
         // flag = true;
         // window.getComputedStyle();
 
@@ -94,7 +94,7 @@ function showBooks() {
         card = document.createElement("div");
         // card.setAttribute("data-card", i + 1);
         card.classList.add("card");
-        card.append(author,title,pages,read,change,remove);
+        // card.append(author,title,pages,read,change,remove);
         // card.appendChild(author);
         // card.appendChild(title);
         // card.appendChild(pages);
@@ -149,9 +149,10 @@ function renderBooks() {
     }
 }
 
+renderBooks();
 // if (parsed.length > 0) { showBooks(); }
 
-if (parsed.length > 0) { renderBooks(); }
+// if (parsed.length > 0 || booksArray.length > 0) { renderBooks(); }
 // if(booksArray.length > 0)renderBooks();
 
 // if(flag) {document.removeChild(cards);renderBooks()};   
