@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
     <title>Project: Library</title>
 </head>
 
@@ -13,14 +20,6 @@
         <header>Project: Library</header>
         <div class="books">
             <div class="cards">
-                <!-- <div class="card">
-                    <div class="author"></div>
-                    <div class="title"></div>
-                    <div class="pages"></div>
-                    <div class="read-status"></div>
-                    <div class="remove-button"></div>
-                    <div class="change-status"></div>
-                </div> -->
             </div>
         </div>
         <form id="form" hidden>
@@ -37,27 +36,8 @@
     <!-- <script src="js/index02.js"></script> -->
     <!-- <script src="js/withLocalStorage.js"></script> -->
     <!-- <script src="js/withLocalStorage02.js"></script> -->
-    <script src="js/anotherLS.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAvu938r5h51c41fUYSu-GKwMxAOsZFTNA",
-            authDomain: "libraryassignment-18f3a.firebaseapp.com",
-            projectId: "libraryassignment-18f3a",
-            storageBucket: "libraryassignment-18f3a.appspot.com",
-            messagingSenderId: "608057700737",
-            appId: "1:608057700737:web:295026c92ae394f1ffb880"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+    <!-- <script src="js/anotherLS.js"></script> -->
+    <script src="js/withFirebase.js"></script>
 </body>
 
 </html>
