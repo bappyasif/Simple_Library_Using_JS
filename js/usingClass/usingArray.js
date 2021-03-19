@@ -21,7 +21,7 @@ addButton.addEventListener("click", () => {
 });
 
 addBook.addEventListener("click", evt => {
-    evt.preventDefault();
+    // evt.preventDefault();
     let bookAuthor = document.querySelector(".book-name");
     let bookTitle = document.querySelector(".book-title");
     let bookPages = document.querySelector(".book-pages");

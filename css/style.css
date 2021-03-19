@@ -1,18 +1,59 @@
 .container {
     text-align: center;
+    background: silver;
+    width: 56vw;
+    align-content: center;
+    margin: auto;
+}
+
+header {
+    background: greenyellow;
 }
 
 .books {
-    background-color: honeydew;
-    max-width: min-content;
+    width: 56vw;
+    
 }
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: silver;
 }
 
 .card {
-    margin-left: 20px;
-    margin-right: 20px;
-    /* align-items: center; */
+    margin: 15px;
+    background: honeydew;
+    width: 29vmin;
+    border: 1.1px double silver;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 47vw;
+    justify-content: center;
+    margin: auto;
+    background: honeydew;
+}
+
+input {
+    margin: 1.1px;
+}
+
+input:invalid {
+    outline: thin;
+    border: 1.1px solid maroon;
+}
+
+input:focus {
+    outline: thin;
+    border: 1.1px solid green;
+}
+
+input:valid {
+    outline: thin;
+    border: 1.1px solid silver;
+    background: linear-gradient(to left, greenyellow, green);
 }

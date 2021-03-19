@@ -22,13 +22,22 @@
             <div class="cards">
             </div>
         </div>
-        <form id="form" hidden>
-            <input type="text" class="book-name">
-            <input type="text" class="book-title">
-            <input type="number" class="book-pages">
-            <input type="text" class="book-read">
+        <div class="form-div" id="form">
+            <form hidden>
+                <input type="text" class="book-name" required maxlength="38" pattern="\w+">
+                <input type="text" class="book-title" required maxlength="38" pattern="\w+">
+                <input type="number" class="book-pages" required min="1">
+                <input type="text" class="book-read" required pattern="[Yy]es|[Nn]o">
+                <button id="add-now">Add Now</button>
+            </form>
+        </div>
+        <!-- <form hidden>
+            <input type="text" class="book-name" required maxlength="38">
+            <input type="text" class="book-title" required maxlength="38">
+            <input type="number" class="book-pages" required min="1">
+            <input type="text" class="book-read" required pattern="[Yy]es|[Nn]o">
             <button id="add-now">Add Now</button>
-        </form>
+        </form> -->
         <!-- <div class="button">ADD A NEW BOOK</div> -->
         <button class="button">ADD A NEW BOOK</button>
     </div>
@@ -38,7 +47,8 @@
     <!-- <script src="js/withLocalStorage02.js"></script> -->
     <!-- <script src="js/anotherLS.js"></script> -->
     <!-- <script src="js/withFirebase.js"></script> -->
-    <script src="js/usingClass/usingArray.js"></script>
+    <!-- <script src="js/usingClass/usingArray.js"></script> -->
+    <script src="js/usingClass/withValidation.js"></script>
 </body>
 
 </html>
